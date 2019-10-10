@@ -10,10 +10,20 @@
 //   expect(calculateBill).toBeDefined();
 // });
 
+// const calculateBill = (amount, vat, tip) => {
+//   incVat = amount + amount * (vat / 100);
+//   total = incVat + tip;
+//   console.log("the total amount is £:" + total);
+// };
+
 const calculateBill = (amount, vat, tip) => {
-  incVat = amount + amount * (vat / 100);
-  total = incVat + tip;
-  console.log("the total amount is £:" + total);
+  if (typeof amount !== "number") {
+    console.log("all inputs must be numbers");
+  } else {
+    incVat = amount + amount * (vat / 100);
+    total = incVat + tip;
+    console.log("the total amount is £" + total);
+  }
 };
 
 calculateBill(10, 20, 5);
