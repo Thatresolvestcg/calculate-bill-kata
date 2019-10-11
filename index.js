@@ -4,19 +4,10 @@ import { type } from "os";
 // this function will need three arguments
 // we will need to return a string with a currency sign £ so maybe "£" + var
 
-// take price, vat and tip rate as numbers
+test("calculateBill is a function", () => {
+  expect(calculateBill).toBeDefined();
+});
 
-// (amount + (amount * vat / 100) + tip)
-
-// test("calculateBill is a functon", () => {
-//   expect(calculateBill).toBeDefined();
-// });
-
-// const calculateBill = (amount, vat, tip) => {
-//   incVat = amount + amount * (vat / 100);
-//   total = incVat + tip;
-//   console.log("the total amount is £:" + total);
-// };
 
 const calculateBill = (amount, vat, tip) => {
   if (typeof amount !== "number") {
@@ -32,7 +23,6 @@ const calculateBill = (amount, vat, tip) => {
   }
 };
 
-// console.log(calculateBill);
 
 // this how I have been testing without Jest
 // calculateBill(10, 20, 5);
