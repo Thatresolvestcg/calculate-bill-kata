@@ -4,10 +4,6 @@ import { type } from "os";
 // this function will need three arguments
 // we will need to return a string with a currency sign £ so maybe "£" + var
 
-test("calculateBill is a function", () => {
-  expect(calculateBill).toBeDefined();
-});
-
 
 const calculateBill = (amount, vat, tip) => {
   if (typeof amount !== "number") {
@@ -23,9 +19,4 @@ const calculateBill = (amount, vat, tip) => {
   }
 };
 
-
-// this how I have been testing without Jest
-// calculateBill(10, 20, 5);
-// calculateBill("barry", 10, 20);
-// calculateBill(100, "barry", 30);
-// calculateBill(100, 40, "barry");
+module.exports = calculateBill;

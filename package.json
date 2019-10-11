@@ -1,15 +1,29 @@
 {
   "name": "calculate-bill-kata",
   "version": "1.0.0",
-  "description": "",
+  "description": "I have been unable to get Jest working on my machine will resolve this at bootcamp tonight hopefuly.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thatresolvestcg/calculate-bill-kata.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Thatresolvestcg/calculate-bill-kata/issues"
+  },
+  "homepage": "https://github.com/Thatresolvestcg/calculate-bill-kata#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
   }
 }
